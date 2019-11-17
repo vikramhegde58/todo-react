@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import TodoContainer from './components/todo/TodoContainer';
 import BucketContainer from './components/bucket/BucketContainer';
-import { Container, Button, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { TAB } from './utils/constants';
 import { connect } from 'react-redux';
 import { fetchTodos } from './actions/TodoActions';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Container, Button, Row, Col } from 'reactstrap';
+import { Row } from 'reactstrap';
 
 import BucketCard from './BucketCard';
 import BucketModal from './BucketModal';

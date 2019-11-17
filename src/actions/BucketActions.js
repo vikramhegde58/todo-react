@@ -10,7 +10,6 @@ export const fetchBuckets = () => dispatch => {
     })
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             dispatch({
                 type: FETCH_BUCKETS,
                 payload: json

@@ -10,7 +10,6 @@ export const fetchTodos = () => dispatch => {
     })
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             dispatch({
                 type: FETCH_TODOS,
                 payload: json

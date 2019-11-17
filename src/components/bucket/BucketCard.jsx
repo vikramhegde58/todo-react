@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import './BucketCard.css'
 
 import editIcon from '../../assets/images/edit.png';
@@ -34,13 +34,13 @@ class BucketCard extends Component {
                         <h5 className="title text-capitalize">{this.props.bucket.title}</h5>
                         <h6 className="description">{this.props.bucket.description}</h6>
                         <div className="text-center">
-                            <img className="img-icon" onClick={this.editBucket} height="35" width="35" src={editIcon} />
-                            <img className="img-icon" onClick={this.deleteBucket} height="35" width="35" src={deleteIcon} />
+                            <img className="img-icon" onClick={this.editBucket} height="35" width="35" src={editIcon} alt="edit-icon" />
+                            <img className="img-icon" onClick={this.deleteBucket} height="35" width="35" src={deleteIcon} alt="delete-icon" />
                         </div>
                     </div>
                 ) : (
                         <div className="bucket-card bucket-card-icon">
-                            <img className="img-icon" onClick={this.addBucket} src={addIcon} />
+                            <img className="img-icon" onClick={this.addBucket} src={addIcon} alt="add-icon" />
                             <p>Add Bucket</p>
                         </div>
                     )}

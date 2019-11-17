@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Container, Button, Row, Col } from 'reactstrap';
+import { Row } from 'reactstrap';
 import { updateTodo, deleteTodo, createTodo } from '../../actions/TodoActions'
 import TodoCard from './TodoCard';
 import TodoModal from './TodoModal';

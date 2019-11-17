@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import './TodoCard.css'
 
 import editIcon from '../../assets/images/edit.png';
@@ -38,13 +38,13 @@ class TodoCard extends Component {
                         <p>{this.props.todo.bucket}</p>
                         <p>Status: <strong className={this.props.todo.done ? "text-success" : "text-danger"}>{this.props.todo.done ? "Done" : "Pending"}</strong></p>
                         <div className="text-center">
-                            <img className="img-icon" onClick={this.editTodo} height="35" width="35" src={editIcon} />
-                            <img className="img-icon" onClick={this.deleteTodo} height="35" width="35" src={deleteIcon} />
+                            <img className="img-icon" onClick={this.editTodo} height="35" width="35" src={editIcon} alt="edit-icon" />
+                            <img className="img-icon" onClick={this.deleteTodo} height="35" width="35" src={deleteIcon} alt="delete-icon" />
                         </div>
                     </div>
                 ) : (
                         <div className="todo-card todo-card-icon">
-                            <img className="img-icon" onClick={this.addTodo} src={addIcon} />
+                            <img className="img-icon" onClick={this.addTodo} src={addIcon} alt="add-icon" />
                             <p>Add Todo</p>
                         </div>
                     )}
